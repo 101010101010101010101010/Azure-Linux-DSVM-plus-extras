@@ -14,7 +14,7 @@ This template can also be extended to create a H2O cluster by setting the the <b
 Once the deployment finishes creating, you can:
 
 1) Connect to <b>Jupyter Notebook</b> by going to *https://\<VM DNS name or IP Address of DSVM-0 node\>:8000/*</br>
-2) Connect to <b> H2O Flow</b> by going to *http://\<VM DNS name or IP Address of DSVM-0 node\>:54321/*
+2) Connect to <b> H2O Flow</b> by going to *http://\<VM DNS name or IP Address of DSVM-0 node\>:54321/*</br>
 3) Connecto to <b> RStudio Server </b> by going to *http://\<VM DNS name or IP Address of DSVM-0 node\>:8787/*
 
 This template lets you select from DS_v2 VM types (<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage/" target="_blank">Premiun Storage SSD drives</a>) for CPU and I/O intensive workloads.
