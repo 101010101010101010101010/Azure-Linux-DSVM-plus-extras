@@ -83,6 +83,7 @@ echo "Downloading cool notebooks.."
 cd /home/$2/notebooks
 curl --silent -o H2O_pydemo_tutorial_breast_cancer_classification.ipynb "https://raw.githubusercontent.com/h2oai/h2o-3/master/h2o-py/demos/H2O_tutorial_breast_cancer_classification.ipynb"
 curl --silent -o H2O_rdemo_tutorial_eeg_eyestate.ipynb "https://raw.githubusercontent.com/h2oai/h2o-3/master/h2o-r/demos/rdemo.tutorial.eeg.eyestate.ipynb"
+curl --silent -o Keras_Introduction.ipynb "https://raw.githubusercontent.com/leriomaggio/deep-learning-keras-tensorflow/master/1.3%20Introduction%20-%20Keras.ipynb"
 curl --silent -o Keras_RMM_LSTM_example.ipynb "https://raw.githubusercontent.com/leriomaggio/deep-learning-keras-tensorflow/master/3.2%20RNN%20and%20LSTM.ipynb"
 
 echo "Running h2o.jar"
