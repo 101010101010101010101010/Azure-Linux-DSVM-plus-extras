@@ -58,9 +58,12 @@ echo "Upgrading XGBoost to the latest version..."
 pip install -U xgboost 
 pip3 install -U xgboost
 
-echo "Installing TensorFlow with GPU support ... "
-pip install tensorflow-gpu
-pip3 install tensorflow-gpu
+echo "Installing TensorFlow (uncomment below for GPU support)... "
+pip install tensorflow
+pip3 install tensorflow
+#pip install tensorflow-gpu
+#pip3 install tensorflow-gpu
+
 
 echo "Installing Keras..." 
 pip install -U keras 
