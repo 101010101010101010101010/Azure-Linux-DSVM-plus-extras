@@ -1,5 +1,5 @@
 # Azure ARM Template to deploy a Linux Data Science VMs + extras
-Automatically deploys in Azure the Linux DSVM using a template + installs the latest version of H2O for python and R, Keras, Theano and  XGBoost
+Automatically deploys in Azure the Linux DSVM using a template + installs the latest version of H2O for python and R, Keras, Theano, TensorFlow, XGBoost and RStudio server.
 
 
 <a href="https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2Fpablomarin%2FAzure-Linux-DSVM-plus-extras%2Fmaster%2Fazuredeploy.json" target="_blank">
@@ -11,12 +11,11 @@ Automatically deploys in Azure the Linux DSVM using a template + installs the la
 
 This template can also be extended to create a H2O cluster by setting the the <b>scaleNumber</b> parameter to specify the number of nodes in the cluster. Default is 1 for a single VM.
 
-This template will automatically: download the latest stable version of H2O on each node (at */dsvm/tools* folder), installs H2O for R and Python, install the latest Keras, Theano and XGBoost and run the h2o.jar.
-
 Once the deployment finishes creating, you can:
 
 1) Connect to <b>Jupyter Notebook</b> by going to *https://\<VM DNS name or IP Address of DSVM-0 node\>:8000/*</br>
 2) Connect to <b> H2O Flow</b> by going to *http://\<VM DNS name or IP Address of DSVM-0 node\>:54321/*
+3) Connecto to <b> RStudio Server </b> by going to *http://\<VM DNS name or IP Address of DSVM-0 node\>:8787/*
 
 This template lets you select from DS_v2 VM types (<a href="https://azure.microsoft.com/en-us/documentation/articles/storage-premium-storage/" target="_blank">Premiun Storage SSD drives</a>) for CPU and I/O intensive workloads.
 
